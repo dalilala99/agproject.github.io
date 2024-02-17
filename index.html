@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/scripts/scripts.js"></script>
+    <title>AG</title>
+</head>
+<body>
+
+    <header>
+        <h1>AG PROJECT</h1>
+    </header>
+
+    <nav>
+        <a href="#section1">Home</a>
+        <a href="#section2">Plumbing</a>
+        <a href="#section3">Heating & Gas</a>
+        <a href="#section4">Gallery</a>
+        <a href="#section4">Contact</a>
+    </nav>
+
+    <div class="menu-icon">&#9776;</div>
+
+    <div id="section1" class="content">
+        <h2>Section 1</h2>
+        <p>Random text for Section 1.</p>
+    </div>
+
+    <div id="section2" class="content">
+        <h2>Section 2</h2>
+        <p>Random text for Section 2.</p>
+    </div>
+
+    <div id="section3" class="content">
+        <h2>Section 3</h2>
+        <p>Random text for Section 3.</p>
+    </div>
+
+    <div id="section4" class="content">
+        <h2>Section 4</h2>
+        <p>Random text for Section 4.</p>
+    </div>
+
+    <script>
+        // Toggle navigation menu for small screens
+        document.querySelector('.menu-icon').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
