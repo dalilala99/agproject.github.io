@@ -81,3 +81,40 @@ section {
   display: inline-block;
   transition: transform 0.5s ease;
 }
+
+/* contact*/
+#contact form {
+  margin-top: 20px;
+}
+
+#contact fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+#contact input[type="submit"],
+#contact input[type="reset"] {
+  background-color: #027AC6;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+#contact input[type="submit"]:hover,
+#contact input[type="reset"]:hover {
+  background-color: #025a8e;
+}
