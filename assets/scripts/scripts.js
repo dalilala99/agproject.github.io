@@ -51,3 +51,27 @@ document.addEventListener('DOMContentLoaded', function () {
  document.querySelector('.menu-icon').addEventListener('click', function () {
     document.querySelector('nav').classList.toggle('show');
 });
+
+// checks contact form
+function riempita(box)
+    {
+    if (box.value.length < 1)
+      {
+      alert ("Errore! La casella di testo � vuota!");
+      return false;
+      }
+    return true;
+    }  
+    function email(box)
+    {
+    var apos, dotpos, lastpos; 
+    apos = box.value.indexOf("@");
+    dotpos = box.value.lastIndexOf(".");
+    lastpos = box.value.lenght-1;
+    if (apos<1 || dotpos-apos<2 || lastpos-dotpos>3)
+      {
+      alert("Errore! La casella di testo non contiene un indirizzo mail valido!");
+      return false;
+      } 
+    return true;
+    }

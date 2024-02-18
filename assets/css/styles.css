@@ -11,6 +11,39 @@ header {
   text-align: center;
 }
 
+/* ... (Other styles remain unchanged) ... */
+
+#home {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding-top: 56px; /* Adjust this value based on your navbar height */
+}
+
+#gallery,
+#contact {
+  padding-top: 56px; /* Adjust this value based on your navbar height */
+}
+
+#home img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+
 nav {
   display: flex;
   justify-content: center;
@@ -36,7 +69,60 @@ nav a:hover {
 section {
   margin: 40px 0;
 }
+#section1,
+#section2 {
+    padding-top: 56px; /* Adjust this value based on your navbar height */
+}
 
+#gallery img,
+#contact {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*buttons*/
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  background: #027AC6;
+  color: white;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+/* Button 1a */
+.btn-1a:hover,
+.btn-1a:active {
+  color: #0e83cd;
+  background: #fff;
+}
 /* Hamburger menu styles */
 .menu-icon {
   display: none;
@@ -82,6 +168,126 @@ section {
   transition: transform 0.5s ease;
 }
 
+/*carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  font-size: 30px;
+  height: 70px;
+  width: 5vw;
+  /* text-align: center; */
+  /* text-decoration: none; */
+  /* margin: 5px 2px; */
+  background: #027AC6;
+  color: white;
+}
+
+.carousel-control-next , .carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  font-size: 30px;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  background: #027AC6;
+  color: white;
+}
+.carousel-control-next:hover , .carousel-control-prev:hover {
+  opacity: 0.7;
+}
+
+#carouselExample {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  height: 100vh;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+  width: 100%; /* Adjust width to cover the entire carousel item */
+}
+
+
+.carousel-caption h1,
+.carousel-caption h2 {
+  font-family:'Montserrat' ;
+  padding: 20px 10px;
+  margin: 0;
+}
+.navbar-text ml-2{
+  padding: 0px 0px;
+}
+
+#footer {
+  background-color: #343a40; /* Match the navbar background color */
+  color: white; /* Match the navbar font color */
+  padding: 40px 0;
+}
+
+#footer h3 {
+  color: white; /* Match the navbar font color */
+}
+
+#footer p {
+  color: white; /* Match the navbar font color */
+}
+
+
+
+/* New style for smaller screens */
+@media (max-width: 576px) {
+.carousel-caption {
+font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+#contact-button {
+font-size: 12px; /* Adjust font size for smaller screens */
+bottom: 5%; /* Adjust button position for smaller screens */
+}
+
+/* Ensure the headers and contact button are always visible on small screens */
+.carousel-caption,
+#contact-button {
+display: block !important;
+}
+}
+@media (max-width: 767px) {
+.carousel-caption {
+font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+#contact-button {
+font-size: 12px; /* Adjust font size for smaller screens */
+bottom: 5%; /* Adjust button position for smaller screens */
+}
+
+/* Ensure the headers and contact button are always visible on small screens */
+.carousel-caption,
+#contact-button {
+display: block !important;
+}
+}
+
 /* contact*/
 #contact form {
   margin-top: 20px;
@@ -118,3 +324,4 @@ section {
 #contact input[type="reset"]:hover {
   background-color: #025a8e;
 }
+

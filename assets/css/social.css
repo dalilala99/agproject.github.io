@@ -1,12 +1,14 @@
 /*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>*/
 .fa {
-  padding: 10px;
-  font-size: 15px;
-  width: 30px;
+  padding: 5%;
+  font-size: 5%;
+  width: 10%;
   text-align: center;
   text-decoration: none;
-  margin: 2px 2px;
+  margin: 5px 2px;
+  display: inline-block; /* Ensure the buttons stay in a line */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .fa:hover {
@@ -122,5 +124,3 @@
   background: grey;
   color: white;
 }
-
-/*<a href="#" class="fa fa-facebook"></a>*/
